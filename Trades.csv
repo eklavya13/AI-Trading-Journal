@@ -1,0 +1,109 @@
+setup,rr,session,result,emotion,pair,pnl
+Liquidity Sweep,2.5,London,win,confident,XAUUSD,250
+NY Reversal,-1.0,New York,loss,fear,NQ,-100
+Asia Breakout,1.8,Asia,win,focused,ES,180
+Liquidity Sweep,3.0,London,win,calm,XAUUSD,300
+NY Reversal,-1.0,New York,loss,revenge,NQ,-100
+Liquidity Sweep,2.1,London,win,confident,ES,210
+Asia Breakout,-1.0,Asia,loss,fear,XAUUSD,-100
+NY Reversal,2.4,New York,win,focused,NQ,240
+Liquidity Sweep,1.9,London,win,calm,XAUUSD,190
+Asia Breakout,-1.0,Asia,loss,tired,ES,-100
+Liquidity Sweep,2.8,London,win,confident,NQ,280
+NY Reversal,-1.0,New York,loss,revenge,XAUUSD,-100
+Asia Breakout,2.2,Asia,win,focused,ES,220
+Liquidity Sweep,2.6,London,win,calm,NQ,260
+NY Reversal,1.7,New York,win,focused,XAUUSD,170
+Liquidity Sweep,-1.0,London,loss,fear,ES,-100
+Asia Breakout,2.4,Asia,win,confident,NQ,240
+Liquidity Sweep,3.1,London,win,focused,XAUUSD,310
+NY Reversal,-1.0,New York,loss,tired,ES,-100
+Asia Breakout,1.9,Asia,win,calm,NQ,190
+Liquidity Sweep,2.3,London,win,confident,ES,230
+NY Reversal,-1.0,New York,loss,revenge,NQ,-100
+Asia Breakout,-1.0,Asia,loss,fear,XAUUSD,-100
+Liquidity Sweep,2.7,London,win,focused,NQ,270
+NY Reversal,2.0,New York,win,calm,ES,200
+Liquidity Sweep,3.4,London,win,confident,XAUUSD,340
+Asia Breakout,2.1,Asia,win,focused,NQ,210
+Liquidity Sweep,-1.0,London,loss,tired,ES,-100
+NY Reversal,-1.0,New York,loss,fear,XAUUSD,-100
+Liquidity Sweep,2.9,London,win,calm,NQ,290
+Asia Breakout,1.7,Asia,win,focused,ES,170
+Liquidity Sweep,2.0,London,win,confident,XAUUSD,200
+NY Reversal,2.6,New York,win,calm,NQ,260
+Asia Breakout,-1.0,Asia,loss,revenge,ES,-100
+Liquidity Sweep,3.2,London,win,focused,XAUUSD,320
+NY Reversal,-1.0,New York,loss,tired,NQ,-100
+Asia Breakout,2.3,Asia,win,confident,ES,230
+Liquidity Sweep,2.4,London,win,calm,XAUUSD,240
+NY Reversal,1.8,New York,win,focused,NQ,180
+Liquidity Sweep,-1.0,London,loss,fear,ES,-100
+Asia Breakout,2.5,Asia,win,calm,XAUUSD,250
+Liquidity Sweep,3.0,London,win,confident,NQ,300
+NY Reversal,-1.0,New York,loss,revenge,ES,-100
+Asia Breakout,2.0,Asia,win,focused,XAUUSD,200
+Liquidity Sweep,2.8,London,win,calm,NQ,280
+NY Reversal,2.2,New York,win,confident,ES,220
+Liquidity Sweep,3.3,London,win,focused,XAUUSD,330
+Asia Breakout,-1.0,Asia,loss,fear,NQ,-100
+Liquidity Sweep,2.1,London,win,calm,ES,210
+NY Reversal,-1.0,New York,loss,tired,XAUUSD,-100
+Asia Breakout,2.6,Asia,win,focused,NQ,260
+Liquidity Sweep,2.9,London,win,confident,ES,290
+NY Reversal,1.9,New York,win,calm,XAUUSD,190
+Liquidity Sweep,-1.0,London,loss,revenge,NQ,-100
+Asia Breakout,2.4,Asia,win,focused,ES,240
+Liquidity Sweep,3.1,London,win,confident,XAUUSD,310
+NY Reversal,-1.0,New York,loss,fear,NQ,-100
+Asia Breakout,1.8,Asia,win,calm,ES,180
+Liquidity Sweep,2.7,London,win,focused,XAUUSD,270
+NY Reversal,2.3,New York,win,confident,NQ,230
+Liquidity Sweep,-1.0,London,loss,tired,ES,-100
+Asia Breakout,2.2,Asia,win,focused,XAUUSD,220
+Liquidity Sweep,3.0,London,win,calm,NQ,300
+NY Reversal,-1.0,New York,loss,revenge,ES,-100
+Asia Breakout,2.1,Asia,win,confident,XAUUSD,210
+Liquidity Sweep,2.5,London,win,focused,NQ,250
+NY Reversal,1.7,New York,win,calm,ES,170
+Liquidity Sweep,-1.0,London,loss,fear,XAUUSD,-100
+Asia Breakout,2.7,Asia,win,focused,NQ,270
+Liquidity Sweep,3.4,London,win,confident,ES,340
+NY Reversal,-1.0,New York,loss,tired,XAUUSD,-100
+Asia Breakout,2.3,Asia,win,calm,NQ,230
+Liquidity Sweep,2.6,London,win,focused,ES,260
+NY Reversal,2.1,New York,win,confident,XAUUSD,210
+Liquidity Sweep,-1.0,London,loss,revenge,NQ,-100
+Asia Breakout,2.5,Asia,win,focused,ES,250
+Liquidity Sweep,3.2,London,win,calm,XAUUSD,320
+NY Reversal,-1.0,New York,loss,fear,NQ,-100
+Asia Breakout,1.9,Asia,win,confident,ES,190
+Liquidity Sweep,2.8,London,win,focused,XAUUSD,280
+NY Reversal,2.4,New York,win,calm,NQ,240
+Liquidity Sweep,-1.0,London,loss,tired,ES,-100
+Asia Breakout,2.6,Asia,win,focused,XAUUSD,260
+Liquidity Sweep,3.0,London,win,confident,NQ,300
+NY Reversal,-1.0,New York,loss,revenge,ES,-100
+Asia Breakout,2.0,Asia,win,calm,XAUUSD,200
+Liquidity Sweep,2.7,London,win,focused,NQ,270
+NY Reversal,1.8,New York,win,confident,ES,180
+Liquidity Sweep,-1.0,London,loss,fear,XAUUSD,-100
+Asia Breakout,2.4,Asia,win,focused,NQ,240
+Liquidity Sweep,3.1,London,win,calm,ES,310
+NY Reversal,-1.0,New York,loss,tired,XAUUSD,-100
+Asia Breakout,2.2,Asia,win,confident,NQ,220
+Liquidity Sweep,-1.0,London,loss,confident,XAUUSD,-100
+Liquidity Sweep,-1.0,London,loss,focused,NQ,-100
+NY Reversal,2.4,New York,win,revenge,ES,240
+NY Reversal,1.8,New York,win,fear,XAUUSD,180
+Asia Breakout,-1.0,Asia,loss,focused,NQ,-100
+Asia Breakout,2.3,Asia,win,tired,ES,230
+Liquidity Sweep,1.9,London,win,fear,XAUUSD,190
+Liquidity Sweep,-1.0,London,loss,calm,ES,-100
+NY Reversal,2.0,New York,win,revenge,NQ,200
+Asia Breakout,-1.0,Asia,loss,confident,XAUUSD,-100
+Liquidity Sweep,2.1,London,win,tired,NQ,210
+NY Reversal,-1.0,New York,loss,focused,ES,-100
+Asia Breakout,2.5,Asia,win,revenge,XAUUSD,250
+Liquidity Sweep,-1.0,London,loss,confident,NQ,-100
+NY Reversal,1.7,New York,win,tired,ES,170
