@@ -60,6 +60,9 @@ class TradeRecord(BaseModel):
     pair : str
     result : str
     pnl : float
+    journal_entry: str
+    lessons_learned: str
+    trade_rating: int
 
 class UserRegister(BaseModel):
     email: str
@@ -229,7 +232,10 @@ def add_trade(
         emotion=trade.emotion,
         pair=trade.pair,
         result=trade.result,
-        pnl=trade.pnl
+        pnl=trade.pnl,
+        journal_entry=trade.journal_entry,
+        lessons_learned=trade.lessons_learned,
+        trade_rating=trade.trade_rating
     )
 
     db.add(new_trade)
@@ -325,6 +331,42 @@ def best_setup(
     }
 
 
+@app.get("/setup-performance")
+def setup_performance(
+    db: Session = Depends(get_db)
+):
+    trades = db.query(Trade).all()
+
+    setup_stats = {}
+
+    for trade in trades:
+
+        if trade.setup not in setup_stats:
+            setup_stats[trade.setup] = {
+                "wins": 0,
+                "total": 0
+            }
+
+        setup_stats[trade.setup]["total"] += 1
+
+        if trade.result == "WIN":
+            setup_stats[trade.setup]["wins"] += 1
+
+    result = []
+
+    for setup, stats in setup_stats.items():
+
+        win_rate = (
+            stats["wins"] / stats["total"]
+        ) * 100
+
+        result.append({
+            "setup": setup,
+            "winRate": round(win_rate, 2)
+        })
+
+    return result
+
 
 @app.get("/best-session")
 def best_session(
@@ -372,7 +414,44 @@ def best_session(
         "win_rate": round(best_rate, 2)
     }
 
+@app.get("/session-performance")
+def session_performance(
+    db: Session = Depends(get_db)
+):
+    trades = db.query(Trade).all()
 
+    session_stats = {}
+
+    for trade in trades:
+
+        if trade.session not in session_stats:
+            session_stats[trade.session] = {
+                "profit": 0,
+                "wins": 0,
+                "total": 0
+            }
+
+        session_stats[trade.session]["profit"] += trade.pnl
+        session_stats[trade.session]["total"] += 1
+
+        if trade.result == "WIN":
+            session_stats[trade.session]["wins"] += 1
+
+    result = []
+
+    for session, stats in session_stats.items():
+
+        win_rate = (
+            stats["wins"] / stats["total"]
+        ) * 100
+
+        result.append({
+            "session": session,
+            "profit": stats["profit"],
+            "winRate": round(win_rate, 2)
+        })
+
+    return result
 
 @app.get("/emotion-analysis")
 def emotion_analysis(
@@ -475,6 +554,34 @@ def recent_trades(
     ]
 
 
+@app.get("/trade-options")
+def trade_options(
+    db: Session = Depends(get_db)
+):
+    trades = db.query(Trade).all()
+
+    sessions = sorted(
+        list(set(trade.session for trade in trades))
+    )
+
+    setups = sorted(
+        list(set(trade.setup for trade in trades))
+    )
+
+    emotions = sorted(
+        list(set(trade.emotion for trade in trades))
+    )
+
+    pairs = sorted(
+        list(set(trade.pair for trade in trades))
+    )
+
+    return {
+        "sessions": sessions,
+        "setups": setups,
+        "emotions": emotions,
+        "pairs": pairs
+    }
 
 
 

@@ -1,0 +1,41 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html{
+  scroll-behavior:smooth;
+}
+
+body{
+  font-family:Inter,sans-serif;
+  background:#17223b;
+  color:#F8FAFC;
+  line-height:1.6;
+}
+
+img{
+  width:100%;
+  display:block;
+}
+
+a{
+  text-decoration:none;
+  color:inherit;
+}
+
+ul{
+  list-style:none;
+}
+
+button{
+  border:none;
+  cursor:pointer;
+}
+
+.container{
+  width:90%;
+  max-width:1200px;
+  margin:0 auto;
+}

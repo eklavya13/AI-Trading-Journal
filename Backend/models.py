@@ -24,6 +24,9 @@ class Trade(Base):
     result = Column(String)
 
     pnl = Column(Float)
+    journal_entry = Column(String)
+    lessons_learned = Column(String)
+    trade_rating = Column(Integer)
 
 class User(Base):
 
