@@ -47,7 +47,7 @@ function AddTradeForm() {
 
     try {
       const response = await fetch(
-        "http://ai-trading-journal-backend.onrender.com/add-trade",
+        "https://ai-trading-journal-backend.onrender.com/add-trade",
         {
           method: "POST",
           headers: {
