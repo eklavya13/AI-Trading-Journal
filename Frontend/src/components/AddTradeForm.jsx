@@ -19,7 +19,7 @@ function AddTradeForm() {
   const [emotions, setEmotions] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.7:8000/trade-options")
+    fetch("http://ai-trading-journal-backend.onrender.com/trade-options")
       .then((res) => res.json())
       .then((data) => {
         setPairs(data.pairs);
@@ -47,7 +47,7 @@ function AddTradeForm() {
 
     try {
       const response = await fetch(
-        "http://192.168.1.7:8000/add-trade",
+        "http://ai-trading-journal-backend.onrender.com/add-trade",
         {
           method: "POST",
           headers: {
