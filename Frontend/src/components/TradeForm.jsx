@@ -14,7 +14,7 @@ function TradeForm() {
   const [prediction, setPrediction] = useState(null);
 
   useEffect(() => {
-  fetch("http://ai-trading-journal-backend.onrender.com/trade-options")
+  fetch("https://ai-trading-journal-backend.onrender.com/trade-options")
     .then((res) => res.json())
     .then((data) => {
       setPairs(data.pairs);
@@ -37,7 +37,7 @@ function TradeForm() {
 
     try {
       const response = await fetch(
-        "http://ai-trading-journal-backend.onrender.com/predict",
+        "https://ai-trading-journal-backend.onrender.com/predict",
         {
           method: "POST",
           headers: {
