@@ -5,13 +5,13 @@ function Insight() {
   const [bestSession, setBestSession] = useState(null);
 
   useEffect(() => {
-    fetch("http://192.168.1.7:8000/best_setup")
+    fetch("http://ai-trading-journal-backend.onrender.com/best_setup")
       .then((response) => response.json())
       .then((data) => {
         setBestSetup(data);
       });
 
-    fetch("http://192.168.1.7:8000/best-session")
+    fetch("http://ai-trading-journal-backend.onrender.com/best-session")
       .then((response) => response.json())
       .then((data) => {
         setBestSession(data);
