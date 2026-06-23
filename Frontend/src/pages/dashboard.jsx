@@ -12,7 +12,7 @@ function Dashboard() {
   });
 
   useEffect(() => {
-    fetch("http://ai-trading-journal-backend.onrender.com/analytics")
+    fetch("https://ai-trading-journal-backend.onrender.com/analytics")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
