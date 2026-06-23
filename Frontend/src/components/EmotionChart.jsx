@@ -5,7 +5,7 @@ function Emotions() {
   const [emotionData, setEmotionData] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.7:8000/emotion-analysis")
+    fetch("http://ai-trading-journal-backend.onrender.com/emotion-analysis")
       .then((response) => response.json())
       .then((data) => {
         const chartData = Object.entries(data).map(
