@@ -19,7 +19,7 @@ function AddTradeForm() {
   const [emotions, setEmotions] = useState([]);
 
   useEffect(() => {
-    fetch("http://ai-trading-journal-backend.onrender.com/trade-options")
+    fetch("https://ai-trading-journal-backend.onrender.com/trade-options")
       .then((res) => res.json())
       .then((data) => {
         setPairs(data.pairs);
