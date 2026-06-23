@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts";
+import { PieChart, Pie, Cell, Tooltip, Legend } from "recharts";
 
 function SetupChart (){
   const [setupData, setSetupData] = useState([]);
@@ -15,9 +15,13 @@ function SetupChart (){
 }, []);
 
 const CHART_COLORS = [
-  "#95efd1", // Mint Green
-  "#eb9bc3", // Soft Pink
-  "#9bcff1"  // Light Blue
+  "#95efd1",
+  "#eb9bc3",
+  "#9bcff1",
+  "#facc15",
+  "#f97316",
+  "#8b5cf6",
+  "#14b8a6"
 ];
     return(
         <>
@@ -28,29 +32,35 @@ const CHART_COLORS = [
   </h3>
 
   <div className="setup-chart-container">
-    <BarChart width={500} height={400} data={setupData}>
-        <XAxis
-         dataKey="setup"
-         tick={{ fill: "#F8FAFC", fontSize: 14 }}
-         axisLine={{ stroke: "#CBD5E1" }}
-         tickLine={{ stroke: "#CBD5E1" }}
+    <PieChart width={500} height={400}>
+      <Pie
+      data={setupData}
+      dataKey="winRate"
+      nameKey="setup"
+      cx="50%"
+      cy="50%"
+      outerRadius={140}
+      label
+    >
+      {setupData.map((entry, index) => (
+        <Cell
+          key={`cell-${index}`}
+          fill={CHART_COLORS[index % CHART_COLORS.length]}
         />
-        <YAxis
-          tick={{ fill: "#F8FAFC", fontSize: 14 }}
-          axisLine={{ stroke: "#CBD5E1" }}
-         tickLine={{ stroke: "#CBD5E1" }}
-       />
-        <Tooltip 
-        contentStyle={{
-        backgroundColor: "#361f81",
-         border: "1px solid rgba(99,102,241,0.4)",
-        borderRadius: "10px",
-       color: "#f9f9f9"
-        }}/>
-        <Bar dataKey="winRate"
-        fill="#9bcff1"/>
+      ))}
+  </Pie>
 
-    </BarChart>
+  <Tooltip
+    contentStyle={{
+      backgroundColor: "#361f81",
+      border: "1px solid rgba(99,102,241,0.4)",
+      borderRadius: "10px",
+      color: "#f9f9f9"
+    }}
+  />
+
+  <Legend />
+</PieChart>
 
   </div>
 </div>
