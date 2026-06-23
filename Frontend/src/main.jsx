@@ -4,7 +4,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import App from "./App.jsx";
 
-import "./styles/index.css";
+import "./Styles/index.css";
 import "./Styles/landingPage.css";
 import "./Styles/dashboard.css";
 import "./Styles/tradeform.css";
