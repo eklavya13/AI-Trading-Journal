@@ -12,7 +12,7 @@ function Dashboard() {
   });
 
   useEffect(() => {
-    fetch("http://192.168.1.7:8000/analytics")
+    fetch("http://ai-trading-journal-backend.onrender.com/analytics")
       .then((response) => response.json())
       .then((data) => {
         console.log(data);
