@@ -4,7 +4,7 @@ import { Bar, BarChart, Tooltip, XAxis, YAxis, ZAxis, Cell } from "recharts";
 function SessionAnalytics(){
   const [sessionData, setSessionData] = useState([]);
   useEffect(() => {
-  fetch("http://192.168.1.7:8000/session-performance")
+  fetch("http://ai-trading-journal-backend.onrender.com/session-performance")
     .then((res) => res.json())
     .then((data) => {
       setSessionData(data);
