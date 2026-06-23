@@ -4,7 +4,7 @@ import { Bar, BarChart, Tooltip, XAxis, YAxis } from "recharts";
 function SetupChart (){
   const [setupData, setSetupData] = useState([]);
   useEffect(() => {
-  fetch("http://192.168.1.7:8000/setup-performance")
+  fetch("http://ai-trading-journal-backend.onrender.com/setup-performance")
     .then((res) => res.json())
     .then((data) => {
       setSetupData(data);
