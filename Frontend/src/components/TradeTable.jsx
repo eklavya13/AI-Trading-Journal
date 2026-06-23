@@ -4,7 +4,7 @@ function TradeTable() {
   const [trades, setTrades] = useState([]);
 
   useEffect(() => {
-    fetch("http://192.168.1.7:8000/recent-trades")
+    fetch("http://ai-trading-journal-backend.onrender.com/recent-trades")
       .then((response) => response.json())
       .then((data) => {
         console.log("Recent Trades:", data);
