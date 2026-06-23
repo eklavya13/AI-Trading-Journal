@@ -122,7 +122,7 @@ Analyze performance based on:
 - EURUSD
 - GBPUSD
 - XAUUSD
-
+And many more...
 Identify highest-performing instruments.
 
 ---
@@ -146,7 +146,7 @@ Evaluate performance of:
 - Reversal
 - Liquidity Sweep
 - Order Block
-
+And many more...
 ---
 
 ### Emotion Analysis
@@ -157,7 +157,7 @@ Track emotional states:
 - Neutral
 - Fearful
 - Revenge Trading
-
+And many more...
 Understand psychological impact on performance.
 
 ---
@@ -449,5 +449,5 @@ https://github.com/eklavya13
 ---
 
 ## ⭐ Support
-
+This is still a v1 for this project, will keep on modifying it to get it to industry level.
 If you found this project useful, consider giving it a star on GitHub.
