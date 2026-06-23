@@ -12,7 +12,7 @@ function SessionChart() {
    const [sessionData, setSessionData] = useState([]);
 
   useEffect(() => {
-    fetch("http://ai-trading-journal-backend.onrender.com/session-performance")
+    fetch("https://ai-trading-journal-backend.onrender.com/session-performance")
       .then((res) => res.json())
       .then((data) => setSessionData(data))
       .catch((err) => console.error(err));
