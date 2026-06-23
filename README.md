@@ -123,6 +123,7 @@ Analyze performance based on:
 - GBPUSD
 - XAUUSD
 And many more...
+
 Identify highest-performing instruments.
 
 ---
@@ -158,6 +159,7 @@ Track emotional states:
 - Fearful
 - Revenge Trading
 And many more...
+
 Understand psychological impact on performance.
 
 ---
